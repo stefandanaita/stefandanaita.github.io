@@ -1,0 +1,39 @@
+# Site settings
+title: Stefan Adrian Danaita
+description: 'Coding a hobby-career asynchronous converter'
+url: 'http://dsa.io'
+baseurl: '/'
+google_analytics: 'UA-78738492-1'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Stefan-Adrian Danaita'
+  email: me@dsa.io
+  twitter_username: stefandanaita
+  facebook_username: stefandanaita
+  github_username:  stefandanaita
+  linkedin_username:  stefandanaita
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
